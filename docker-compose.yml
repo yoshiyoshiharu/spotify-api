@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    tty: true
+    volumes:
+      - .:/go/src
+    ports:
+      - 8080:8080
